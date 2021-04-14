@@ -1,0 +1,31 @@
+buildscript {
+    ext {
+
+    }
+}
+
+allprojects {
+    group = 'top.yu.mall'
+    version = '0.0.1-SNAPSHOT'
+}
+
+configure(subprojects.findAll { it.name != 'mall-platform' }) {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation platform(project(":mall-platform"))
+
+
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    }
+
+}
+
+
+
+

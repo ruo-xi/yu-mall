@@ -1,0 +1,6 @@
+rootProject.name = 'yu-mall'
+include 'mall-common'
+include 'mall-mbg'
+include 'mall-platform'
+include 'mall-member'
+

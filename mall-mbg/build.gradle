@@ -1,0 +1,9 @@
+dependencies {
+    implementation 'mysql:mysql-connector-java'
+    implementation 'org.mybatis.generator:mybatis-generator-core'
+    implementation 'org.mybatis:mybatis'
+//    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+    implementation 'io.swagger:swagger-annotations'
+//    implementation 'io.springfox:springfox-swagger2'
+//    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+}
